@@ -5,8 +5,8 @@
 
 void SmartslogPlugin::registerTypes(const char *uri)
 {
-    // @uri com.cardiacare.qmlcomponents
-    qmlRegisterType<QmlSmartSlog>(uri, 1, 0, "QmlSmartSlog");
+    // @uri SmartSlog
+    qmlRegisterType<SmartSpace>(uri, 1, 0, "SmartSpace");
 }
 
 

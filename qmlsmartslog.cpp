@@ -1,16 +1,20 @@
 #include "qmlsmartslog.h"
-
-QmlSmartSlog::QmlSmartSlog(QQuickItem *parent):
+//#include <qglobal.h>
+extern "C"{
+#include "vendor/SmartSlog/smartslog.h"
+}
+SmartSpace::SmartSpace(QQuickItem *parent):
     QQuickItem(parent)
 {
-    // By default, QQuickItem does not draw anything. If you subclass
-    // QQuickItem to create a visual item, you will need to uncomment the
-    // following line and re-implement updatePaintNode()
-
-    // setFlag(ItemHasContents, true);
+    qDebug() << "It works!";
 }
 
-QmlSmartSlog::~QmlSmartSlog()
+SmartSpace::~SmartSpace()
 {
+}
+
+void SmartSpace::connect()
+{
+
 }
 
